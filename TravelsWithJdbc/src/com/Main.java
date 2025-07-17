@@ -6,6 +6,8 @@ import com.service.JourneyService;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 public class Main {
@@ -22,7 +24,8 @@ public class Main {
     }
 
     private static boolean displayCompanyLogo() {
-        try (BufferedReader reader = new BufferedReader(new FileReader("C:\\company_logo.txt"))) {
+        Path path = Paths.get("C:\\Project\\logo.txt.txt");
+        try (BufferedReader reader = new BufferedReader(new FileReader(path.toFile()))) {
             String line;
             while ((line = reader.readLine()) != null) {
                 System.out.println(line);

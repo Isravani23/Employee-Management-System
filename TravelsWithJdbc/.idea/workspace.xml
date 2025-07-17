@@ -1,18 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5fde66c-0022-4fa8-8774-3478f23133cc" name="Changes" comment="" />
+    <list default="true" id="c5fde66c-0022-4fa8-8774-3478f23133cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/ABCTravels.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/Logo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/src/model/Route.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/src/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ABCTravels/src/model/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/DataBaseUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/model/Journey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/model/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/model/Route.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/service/JourneyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/com/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/Main.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2sKrR37cyIYnU5WmRHwlII1ZaoM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -20,8 +50,13 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
