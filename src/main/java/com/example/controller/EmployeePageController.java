@@ -49,18 +49,27 @@ public class EmployeePageController {
     }
 
     // Show Update Form
-    @GetMapping("/update")
+    @GetMapping("/update/{id}")
     public String showUpdateForm(@PathVariable Long id, Model model) {
         EmployeeDetails employee = employeeRepository.findById(id)
                 .orElseThrow(() -> new IllegalArgumentException("Invalid employee Id:" + id));
         model.addAttribute("employee", employee);
-        return "add-employee"; // reuse add-employee.html for update
+        return "employee-form"; // reuse the same form for update
     }
 
-    @PostMapping("/update")
-    public String updateEmployee(@ModelAttribute("employee") EmployeeDetails employee) {
-        // employee.id will have the ID from the hidden field
-        employeeRepository.save(employee);
+    @PutMapping("/{id}")
+    public String updateEmployee(@PathVariable Long id, @ModelAttribute("employee") EmployeeDetails employee) {
+        EmployeeDetails existing = employeeRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("Employee not found"));
+
+        existing.setFirstName(employee.getFirstName());
+        existing.setLastName(employee.getLastName());
+        existing.setEmail(employee.getEmail());
+        existing.setEmploymentType(employee.getEmploymentType());
+        existing.setWorkLocation(employee.getWorkLocation());
+        existing.setJoiningDate(employee.getJoiningDate());
+
+        employeeRepository.save(existing);
         return "redirect:/employees/list";
     }
 

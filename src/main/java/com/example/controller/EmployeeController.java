@@ -16,11 +16,11 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/employees")
-public class EmployeeRestController {
+public class EmployeeController {
     private ObjectMapper objectMapper;
     private EmployeeService employeeService;
     @Autowired
-    public  EmployeeRestController(EmployeeService theEmployeeService, ObjectMapper theObjectMapper){
+    public EmployeeController(EmployeeService theEmployeeService, ObjectMapper theObjectMapper){
         employeeService=theEmployeeService;
         objectMapper=theObjectMapper;
     }

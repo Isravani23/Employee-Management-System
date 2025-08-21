@@ -4,8 +4,11 @@
     <title>Employees</title>
 </head>
 <body>
+
 <h2>Employee List</h2>
+
 <table border="1">
+    <thead>
     <tr>
         <th>ID</th>
         <th>Name</th>
@@ -13,8 +16,10 @@
         <th>Employment Type</th>
         <th>Work Location</th>
         <th>Joining Date</th>
+        <th>Actions</th>
     </tr>
-
+    </thead>
+    <tbody>
     <!-- Loop through employees -->
     <tr th:each="emp : ${employees}">
         <td th:text="${emp.id}"></td>
@@ -23,10 +28,24 @@
         <td th:text="${emp.employmentType}"></td>
         <td th:text="${emp.workLocation}"></td>
         <td th:text="${emp.joiningDate}"></td>
+        <td>
+            <!-- Edit redirects to employee edit form -->
+            <a th:href="@{/employees/update/{id}(id=${emp.id})}">Edit</a>
+            <!-- Delete -->
+            <a th:href="@{/employees/delete/{id}(id=${emp.id})}"
+               onclick="return confirm('Are you sure you want to delete this employee?');">
+                Delete
+            </a>
+        </td>
     </tr>
+    </tbody>
 </table>
+
+<br/>
 <div>
-    <a th:href="@{/EMS}" class="btn">Back</a>
+    <a th:href="@{/employees/add}">Add New Employee</a> |
+    <a th:href="@{/employees}">Back</a>
 </div>
+
 </body>
 </html>
