@@ -1,4 +1,4 @@
-#Employee Management System
+## Employee Management System
 
 A Spring Boot + Thymeleaf project for managing employees, roles, and departments.    
 
