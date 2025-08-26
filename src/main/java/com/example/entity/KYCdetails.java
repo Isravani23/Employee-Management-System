@@ -19,16 +19,22 @@ public class KYCdetails {
     @JoinColumn(name = "employee_id", referencedColumnName = "id")
     private EmployeeDetails employeeDetails;
 
-    public KYCdetails() {
+    public KYCdetails(Long employeeId) {
+
     }
 
-    public KYCdetails(EmployeeDetails employeeDetails, String status, String address, String documentNum, String documentType, Long id,LocalDate submissionDate) {
+    public KYCdetails(EmployeeDetails employeeDetails, String status, String address, String documentNum, String documentType, Long id, LocalDate submissionDate, Long employeeId) {
         this.employeeDetails = employeeDetails;
         this.status = status;
         this.address = address;
         this.documentNum = documentNum;
         this.documentType = documentType;
         this.id = id;
+
+    }
+
+    public KYCdetails() {
+
     }
 
     public LocalDate getSubmissionDate() {
@@ -42,6 +48,7 @@ public class KYCdetails {
     public Long getId() {
         return id;
     }
+    
 
     public void setId(Long id) {
         this.id = id;
@@ -86,4 +93,12 @@ public class KYCdetails {
     public void setDocumentType(String documentType) {
         this.documentType = documentType;
     }
+
+    public void setEmployee(EmployeeDetails employee) {
+        this.employeeDetails=employee;
+    }
+    public EmployeeDetails getEmployee() {
+        return employeeDetails;
+    }
+    
 }
