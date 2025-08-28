@@ -4,10 +4,10 @@ A Spring Boot + Thymeleaf project for managing employees, roles, and departments
 
 
 ## 📌 Features
-- Add, update, delete employees
+- Add, update, and delete employees
 - Assign roles & departments
 - KYC management
-- Basic Authentication 
+- Basic Authentication added
 
 ## 🛠️ Tech Stack
 - **Backend**: Java, Spring Boot, Hibernate, Spring Security, REST APIs
