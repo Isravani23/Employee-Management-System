@@ -18,7 +18,7 @@ A Spring Boot + Thymeleaf project for managing employees, roles, and departments
 ## 📸 Project Screenshots
 ## 🏠 Dashboard
 The dashboard provides a quick overview of employees, departments, and key actions available in the system.  
-<img src="images/Dashboard.png" alt="Dashboard" width="600"/>
+<img src="images/dashboard.png" alt="Dashboard" width="600"/>
 ## 👨‍💼 Employee List
 This page displays all employees with basic details, along with edit and delete options to update or remove records.  
 ![Employee List](images/emplist.PNG)
