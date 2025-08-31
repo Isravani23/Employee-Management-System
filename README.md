@@ -15,5 +15,10 @@ A Spring Boot + Thymeleaf project for managing employees, roles, and departments
 - **Database**: MySQL
 - **Tools**: Maven, Git,Postman, IntelliJ IDEA
 
-## Dashboard
+## 📸 Project Screenshots
+## 🏠 Dashboard
+The dashboard provides a quick overview of employees, departments, and key actions available in the system.  
 ![Dashboard](images/dashboard.png)
+## 👨‍💼 Employee List
+This page displays all employees with basic details, along with edit and delete options to update or remove records.  
+![Employee List](images/emplist.PNG)
