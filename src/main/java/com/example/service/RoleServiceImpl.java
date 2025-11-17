@@ -43,7 +43,7 @@ public class RoleServiceImpl implements RoleService{
         if(result.isPresent()){
             employeeRole = result.get();
         }else{
-            throw new EmployeeNotFoundException("Did not foind role id"+theId);
+            throw new EmployeeNotFoundException("Did not found role id"+theId);
         }
         return employeeRole;
     }

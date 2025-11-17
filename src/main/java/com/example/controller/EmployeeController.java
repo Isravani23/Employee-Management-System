@@ -8,6 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -24,8 +25,14 @@ public class EmployeeController {
         employeeService=theEmployeeService;
         objectMapper=theObjectMapper;
     }
-
-    @GetMapping
+    @GetMapping("/page")
+    public Page<EmployeeDetails> getPaginatedEmployees(
+            @RequestParam(defaultValue = "0") int page,
+            @RequestParam(defaultValue = "5") int size
+    ) {
+        return employeeService.getEmployees(page, size);
+    }
+    @GetMapping("/all")
     public List<EmployeeResponse> getAllEmployees() {
         List<EmployeeDetails> employees = employeeService.findAll();
         return employees.stream()
@@ -42,7 +49,7 @@ public class EmployeeController {
     }
     @PostMapping
     public EmployeeDetails addEmployee(@Valid @RequestBody EmployeeDetails theEmployeeDetails){
-        theEmployeeDetails.setId(0);
+        theEmployeeDetails.setId(null);
         EmployeeDetails dbEmp = employeeService.save(theEmployeeDetails);
         return dbEmp;
     }
